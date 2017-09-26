@@ -4,7 +4,7 @@
 
 Thành viên:
 * [ ] **1412240** Bùi Đình Khánh(1412240)
-* [ ] **MSSV** Tên sinh viên 2 (tai khoản git sinh vien 2)
+* [ ] **MSSV** Tên sinh viên 2 (tai khoản git sinh vien )
 
 URL: **URL hosting của bài tập**
 
