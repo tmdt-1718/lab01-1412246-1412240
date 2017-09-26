@@ -16,7 +16,7 @@ Yêu cầu **GIT**:
 * [ ] Sử dụng GIT theo [Feature Branch Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows#feature-branch-workflow).
 
 Yêu cầu **bắt buộc**
-* [] Thiết kế trang web theo responsive với bootstrap với header (navigation bar, logo), left menu, footer và content. (*MSSV*)
+* [ ] Thiết kế trang web theo responsive với bootstrap với header (navigation bar, logo), left menu, footer và content. (*MSSV*)
 * [x] Navigation bar sẽ ẩn đi với kích thước màn hình nhỏ hơn 992px và có nút nhấn để hiển thị navigation bar. (1412240)
 * [ ] Left menu sẽ ẩn đi khi kích thước màn hình nhỏ hơn 768px và có nút nhấn để hiển thị lại left menu. (**MSSV**)
 * [x] Trang web được thiết kế sẽ bao gồm các trang: home, albums, about, blog. (1412240)
