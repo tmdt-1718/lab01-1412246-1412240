@@ -1,2 +1,9 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<% @blogs.each do |blog| %>
+<div class="mycontainer">
+  <%= image_tag blog.avatar.url(:thumb) %>
+  <p>Title: <%=blog.title%> </p>
+  <p><%= link_to 'Read more', blog %></p>
+  <span>Date: <%=blog.created_at.strftime('%d/%m/%y')%></span>
+  <span>Last update: <%=blog.updated_at.strftime('%d/%m/%y')%></span>
+</div>
+<% end %>

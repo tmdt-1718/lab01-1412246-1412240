@@ -9,7 +9,11 @@ class BlogsController < ApplicationController
     @blog = Blog.new
 
   end
-
+  def show
+    if (@blog.status == "private" )
+      check_user
+    end
+  end
   def edit
   end
 
@@ -25,7 +29,7 @@ class BlogsController < ApplicationController
 
   def check_user
     if user_signed_in?
-      if @blog.user_id.to_i != current_user.id
+      if @blog.user_id != current_user.id
           redirect_to root_path
       end
     else
