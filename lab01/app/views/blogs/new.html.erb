@@ -16,11 +16,12 @@
     <br>
     <%= f.select :status, options_for_select([["public"], ["private"]]),:class=>"form-control" %>
   </p>
-
-
-<div>
-  <%= f.submit "Submit"%>
-</div>
+  <div class = "choose-file">
+    <%= f.file_field :avatar  %>
+  </div>
+  <div>
+    <%= f.submit "Submit"%>
+  </div>
 
 
 <% end %>
