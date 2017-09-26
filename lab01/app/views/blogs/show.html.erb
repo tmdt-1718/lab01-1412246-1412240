@@ -16,3 +16,33 @@
 <%= link_to 'Edit', edit_blog_path(@blog) %>
 <%end%>
 <%= link_to 'Back To Home', root_path %>
+<h3>Comment:</h3>
+<%if user_signed_in?%>
+<div class="addcoment">
+  <p><%=current_user.email%></p>
+  <%= form_for :comment, url:create_comment_path do |f| %>
+    <p class="form-group">
+      <%= f.text_area :content,:class=>"form-control" %>
+    </p>
+      <%= f.submit "Submit", :class =>"btn btn-default"%>
+  <% end %>
+
+</div>
+<%end%>
+
+    <%@blog.comments.each do |comment|%>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <%if user_signed_in? && comment.user.id == current_user.id%><!-- /panel-body -->
+          <div style ="float:right">
+            <%= link_to 'Delete', comment, method: :delete, data: { confirm: 'Are you sure?' } %>
+          </div>
+          <%end%>
+            <strong><%=comment.user.email%></strong> <span class="text-muted"><%=comment.post_date.strftime('%d/%m/%y')%></span>
+          </div>
+          <div class="panel-body">
+            <%=comment.content%>
+            </div>
+
+          </div><!-- /panel panel-default -->
+    <%end%>

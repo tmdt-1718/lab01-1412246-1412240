@@ -1,7 +1,7 @@
-<h1>New Blog</h1>
+<h1>Editing Blog</h1>
 
-<%=notice%>
-<%= form_for :blog, url:blogs_path, html: { multipart: true } do |f| %>
+
+<%= form_for @blog, html: { multipart: true } do |f| %>
   <p class ="from-group">
     <%= f.label :title %><br>
     <%= f.text_field :title, :class=>"form-control" %>
@@ -15,14 +15,19 @@
     <%=f.label :status %>
     <br>
     <%= f.select :status, options_for_select([["public"], ["private"]]),:class=>"form-control" %>
+
   </p>
-  <div class = "choose-file">
-    <%= f.file_field :avatar  %>
+  <div class="">
+    <%= f.file_field :avatar %>
   </div>
-  <div>
-    <%= f.submit "Submit"%>
-  </div>
+
+
+    <%= f.submit "Submit", :class =>"choose-file"%>
+
 <% end %>
+
+<%= link_to 'Show', @blog %> |
+<%= link_to 'Back', blogs_path %>
 
 <script type="text/javascript">
 $(document).ready(function() {

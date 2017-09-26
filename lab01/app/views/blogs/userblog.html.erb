@@ -1,0 +1,9 @@
+<% @blogs.each do |blog| %>
+<div class="mycontainer">
+  <%= image_tag blog.avatar.url(:thumb) %>
+  <p>Title: <%=blog.title%> </p>
+  <spanp>Status: <%=blog.status%></span>
+  <span><%= link_to 'Read more', blog%></span>
+  <span><%= link_to 'Delete', blog, method: :delete, data: { confirm: 'Are you sure?' } %></span>
+</div>
+<% end %>
