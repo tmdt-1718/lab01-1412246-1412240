@@ -7,7 +7,8 @@ class BlogsController < ApplicationController
 
   def new
     @blog = Blog.new
-  end
+    @current_page = 'new'
+ end
 
   def show
     if (@blog.status == "private" )

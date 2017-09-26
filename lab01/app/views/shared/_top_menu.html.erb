@@ -14,8 +14,8 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Album</a></li>
-        <li><%=link_to "New Blog",new_blog_path%></li>
+        <li ><a href="#">Album</a></li>
+        <li class = "<%=new_blog_active? ? 'active' : ''%>"><%=link_to "New Blog",new_blog_path%></li>
       </ul>
     <%= render "shared/search"%>
       <ul class="nav navbar-nav navbar-right">
