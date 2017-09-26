@@ -13,5 +13,8 @@
  *= require_tree .
  *= require_self
  *= require bootstrap.css
- *= rerquire styles.scss
+ *= require styles.scss
+ *= require fonts.scss
+ *= require summernote.css
+
  */

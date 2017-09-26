@@ -1,0 +1,38 @@
+<h1>New Blog</h1>
+
+
+<%= form_for :blog, url:blogs_path, html: { multipart: true } do |f| %>
+  <p class ="from-group">
+    <%= f.label :title %><br>
+    <%= f.text_field :title, :class=>"form-control" %>
+  </p>
+
+  <p class="form-group">
+    <%= f.label :content %><br>
+    <%= f.text_area :content,:class=>"form-control",:id=>"summernote" %>
+  </p>
+  <p class="form-group">
+    <%=f.label :status %>
+    <br>
+    <%= f.select :status, options_for_select([["public"], ["private"]]),:class=>"form-control" %>
+  </p>
+
+
+<div>
+  <%= f.submit "Submit"%>
+</div>
+
+
+<% end %>
+
+<script type="text/javascript">
+$(document).ready(function() {
+  $('#summernote').summernote({
+
+    height: 300,                 // set editor height
+  minHeight: null,             // set minimum height of editor
+  maxHeight: null,             // set maximum height of editor
+  focus: true                  // set focus to editable area after initializing summernote
+  });
+});
+</script>
