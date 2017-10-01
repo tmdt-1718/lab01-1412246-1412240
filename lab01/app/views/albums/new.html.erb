@@ -1,0 +1,15 @@
+<h1>New album</h1>
+<%= form_for :album, url: albums_path, html: { multipart: true } do |f| %>
+  <p class ="form-group">
+      <%= f.label :title %>
+      <%=f.text_field :title, :class => "form-control"%>
+  </p>
+  <div>
+    <%=f.file_field :avatar%>
+  </div>
+
+  <div style = "margin-top:5px;margin-bottom :10px">
+    <%=f.submit "Submit",:class => "btn btn-default" %>
+  </div>
+
+<%end%>

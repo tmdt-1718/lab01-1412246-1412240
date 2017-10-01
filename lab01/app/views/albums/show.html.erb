@@ -1,0 +1,10 @@
+<%@images.each do |image|%>
+  <%= image_tag image.avatar.url %>
+<%end%>
+
+<%if user_signed_in? && current_user.id  = @album.user_id %>
+  <%=form_for :image , url:new_image_path do |f| %>
+    <%= f.file_field :avatar %>
+    <%=f.submit "Submit"%>
+  <%end%>
+<%end%>

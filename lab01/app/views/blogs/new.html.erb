@@ -2,7 +2,7 @@
 
 <%=notice%>
 <%= form_for :blog, url:blogs_path, html: { multipart: true } do |f| %>
-  <p class ="from-group">
+  <p class ="form-group">
     <%= f.label :title %><br>
     <%= f.text_field :title, :class=>"form-control" %>
   </p>
@@ -20,7 +20,7 @@
     <%= f.file_field :avatar  %>
   </div>
   <div>
-    <%= f.submit "Submit"%>
+    <%= f.submit "Submit" , :class => "btn btn-default"%>
   </div>
 <% end %>
 
