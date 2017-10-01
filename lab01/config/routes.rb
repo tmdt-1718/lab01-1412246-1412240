@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get '/user/blog' => "blogs#userblog" , as: "user_blog"
   resources :albums
   post '/albums/:id/newimage' => "albums#add_image" , as: "new_image"
+  get 'images/:id' => "images#show"  , as: "image"
 
 
 

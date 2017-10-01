@@ -1,0 +1,15 @@
+<div class = "row" >
+<%@albums.each do |album|%>
+  <div class = "col-sm-3">
+    <div class = "album-image">
+        <%=link_to (image_tag album.avatar.url),album %>
+    </div>
+    <div class = "title">
+      Title:<%= album.title%>
+    </div>
+    <div class = "view">
+      View: <%= album.views%>
+    </div>
+  </div>
+<%end%>
+</div>

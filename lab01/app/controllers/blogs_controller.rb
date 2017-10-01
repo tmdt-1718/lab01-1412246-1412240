@@ -7,13 +7,22 @@ class BlogsController < ApplicationController
 
   def new
     @blog = Blog.new
-    @current_page = 'new'
+    p params[:action]
+    p params[:controller]
  end
 
   def show
     if (@blog.status == "private" )
       check_user
+    else
+      increase_view
     end
+
+  end
+
+  def increase_view
+    @blog.views += 1
+    @blog.save
   end
 
   def edit
@@ -62,6 +71,8 @@ end
     if user_signed_in?
       if @blog.user_id != current_user.id
           redirect_to root_path
+      else
+        increase_view
       end
     else
         redirect_to root_path
