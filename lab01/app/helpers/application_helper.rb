@@ -24,4 +24,8 @@ module ApplicationHelper
       false
     end
   end
+
+  def about_active?
+    ['about'].index(params[:controller]).present?
+  end
 end
