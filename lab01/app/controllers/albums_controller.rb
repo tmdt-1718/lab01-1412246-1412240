@@ -2,7 +2,7 @@ class AlbumsController < ApplicationController
   before_action :authenticate_user!, only: [:new,:create,:destroy,:update]
   before_action :set_album, only: [:show,:add_image]
   def index
-    @albums = Album.all
+    @albums = Album.paginate(:page => params[:page],:per_page => 3)
   end
   def show
     @images = @album.images
