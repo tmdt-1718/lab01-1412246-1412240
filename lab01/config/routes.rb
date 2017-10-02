@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   post '/blogs/:id/comment' => "comment#create" ,as: "create_comment"
   delete '/comments/:id' => "comment#destroy" , as: "comment"
   get '/user/blog' => "blogs#userblog" , as: "user_blog"
+  get '/about' => "about#index"
   resources :albums
   post '/albums/:id/newimage' => "albums#add_image" , as: "new_image"
   get 'images/:id' => "images#show"  , as: "image"
