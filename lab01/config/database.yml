@@ -22,7 +22,7 @@ development:
   database: mylab_development
   username: root
   password: 123456
-  host: 172.17.0.3
+  host: 172.17.0.2
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".

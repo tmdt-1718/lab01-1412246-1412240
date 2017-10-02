@@ -2,6 +2,7 @@
 <div class="mycontainer">
   <%= image_tag blog.avatar.url(:thumb) %>
   <p>Title: <%=blog.title%> </p>
+  <p>Views: <%=blog.views%></p>
   <p><%= link_to 'Read more', blog %></p>
   <span>Date: <%=blog.created_at.strftime('%d/%m/%y')%></span>
   <span>Last update: <%=blog.updated_at.strftime('%d/%m/%y')%></span>
