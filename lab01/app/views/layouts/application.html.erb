@@ -9,6 +9,10 @@
   </head>
 
   <body>
+    <div class="col-sm-2">
+      <%= render "shared/left_menu"%>
+    </div>
+    <div class="main col-sm-10">
     <%= render "shared/top_menu" %>
     <div class = "container">
       <%= yield %>
@@ -18,5 +22,6 @@
         <div class="panel-footer footer" >1412240-1412246</div>
 
     </div>
+  </div>
   </body>
 </html>
