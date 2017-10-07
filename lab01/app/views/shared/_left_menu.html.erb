@@ -1,4 +1,4 @@
-<nav class="navbar navbar-inverse sidebar" role="navigation">
+<nav class="navbar navbar-inverse sidebar " role="navigation">
     <div class="container-fluid">
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
@@ -11,13 +11,12 @@
 			<a class="navbar-brand" href="#">Hai con chim</a>
 		</div>
 		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
+		<div class="collapse navbar-collapse left-menu" id="bs-sidebar-navbar-collapse-1">
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="#">Home<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
-				<li ><a href="#">Album<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-picture"></span></a></li>
-				<li ><a href="#">New Album<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-plus"></span></a></li>
-				<li ><a href="#">New Blog<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-file"></span></a></li>
-				<li><a href="#">About<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-thumbs-up"></span></a></li>
+        <li class = "<%= home_active? ? 'active' : ''%>"><%= link_to "Home" , root_path%></li>
+        <li class = "<%= blogs_active? ? 'active' : ''%>"><%= link_to "Blogs", blogs_path%></li>
+        <li class= "<%= albums_active? ? 'active' : ''%>"><%=link_to "Albums" ,albums_path%></li>
+        <li class="<%= about_active? ? 'active' : ''%>"><a href="/about">About</a> </li>
 			</ul>
 		</div>
 	</div>
@@ -36,7 +35,7 @@
 			$('html').height(Math.max(height1,height3,height2));
 			$('body').height(Math.max(height1,height3,height2));
 		}
-		
+
 	}
 	$(document).ready(function () {
 		htmlbodyHeightUpdate()

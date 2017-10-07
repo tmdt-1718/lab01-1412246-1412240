@@ -2,17 +2,23 @@ body,html{
 	height: 100%;
 }
 
+.left-menu{
+	background-color: white !important;
+}
 /* remove outer padding */
 .main .row{
 	padding: 0px;
 	margin: 0px;
 }
 
+
+
 /*Remove rounded coners*/
 
 nav.sidebar.navbar {
 	border-radius: 0px;
 }
+
 
 nav.sidebar, .main{
 	-webkit-transition: margin 200ms ease-out;

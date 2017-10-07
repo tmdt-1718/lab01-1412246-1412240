@@ -3,6 +3,9 @@ class BlogsController < ApplicationController
   before_action :authenticate_user! , only: [:new,:edit,:create,:destroy]
   before_action :check_user, only:[:edit]
   def index
+    @blogs = Blog.where(["status ='public'"])
+    .order(created_at: :desc)
+    .paginate(:page => params[:page],:per_page => 3)
   end
 
   def new
