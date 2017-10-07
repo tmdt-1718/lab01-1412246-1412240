@@ -16,10 +16,9 @@
     <br>
     <%= f.select :status, options_for_select([["public"], ["private"]]),:class=>"form-control" %>
   </p>
-  <div class = "choose-file">
+    <%=f.label :avatar%>
     <%= f.file_field :avatar  %>
-  </div>
-  <div>
+  <div style = "margin-top: 10px;">
     <%= f.submit "Submit" , :class => "btn btn-default"%>
   </div>
 <% end %>
