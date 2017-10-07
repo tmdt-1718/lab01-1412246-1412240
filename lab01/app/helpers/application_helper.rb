@@ -28,4 +28,15 @@ module ApplicationHelper
   def about_active?
     ['about'].index(params[:controller]).present?
   end
+
+  def home_active?
+    ['home'].index(params[:controller]).present?
+  end
+  def blogs_active?
+    if ['index'].index(params[:action]).present?  && ['blogs'].index(params[:controller]).present?
+      true
+    else
+      false
+    end
+  end
 end

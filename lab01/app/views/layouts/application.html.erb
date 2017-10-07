@@ -9,14 +9,22 @@
   </head>
 
   <body>
-    <%= render "shared/top_menu" %>
-    <div class = "container">
-      <%= yield %>
+    <div class="row">
+          <%= render "shared/top_menu" %>
     </div>
-    <div class = "row">
+    <div class="row">
+      <div class="col-sm-2">
+          <%= render "shared/left_menu" %>
+      </div>
+      <div class="col-sm-10">
+        <div class = "container">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
 
-        <div class="panel-footer footer" >1412240-1412246</div>
-
+    <div class = "row footer">
+        <div class="panel-footer  " >1412240-1412246</div>
     </div>
   </body>
 </html>

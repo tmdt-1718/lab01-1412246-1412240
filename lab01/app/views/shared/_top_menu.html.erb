@@ -18,6 +18,8 @@
         <li class= "<%= new_album_active? ? 'active' : ''%>"><%=link_to "New Album",new_album_path%></li>
         <li class = "<%=new_blog_active? ? 'active' : ''%>"><%=link_to "New Blog",new_blog_path%></li>
         <li class="<%= about_active? ? 'active' : ''%>"><a href="/about">About</a> </li>
+        <li class = "<%= blogs_active? ? 'active' : ''%>"><%= link_to "Blogs", blogs_path%></li>
+
       </ul>
     <%= render "shared/search"%>
       <ul class="nav navbar-nav navbar-right">
