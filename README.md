@@ -6,7 +6,7 @@ Thành viên:
 * [x] 1412240 Bùi Đình Khánh(1412240)
 * [x] 1412246 Hồ Lê Đức Khiêm (1412246 )
 
-URL: https://safe-brushlands-59069.herokuapp.com
+URL: https://glacial-crag-24551.herokuapp.com/
 
 ## Yêu cầu
 
@@ -16,9 +16,9 @@ Yêu cầu **GIT**:
 * [ ] Sử dụng GIT theo [Feature Branch Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows#feature-branch-workflow).
 
 Yêu cầu **bắt buộc**
-* [ ] Thiết kế trang web theo responsive với bootstrap với header (navigation bar, logo), left menu, footer và content. (*MSSV*)
+* [x] Thiết kế trang web theo responsive với bootstrap với header (navigation bar, logo), left menu, footer và content. (1412240 - 1412246)
 * [x] Navigation bar sẽ ẩn đi với kích thước màn hình nhỏ hơn 992px và có nút nhấn để hiển thị navigation bar. (1412240)
-* [ ] Left menu sẽ ẩn đi khi kích thước màn hình nhỏ hơn 768px và có nút nhấn để hiển thị lại left menu. (**MSSV**)
+* [x] Left menu sẽ ẩn đi khi kích thước màn hình nhỏ hơn 768px và có nút nhấn để hiển thị lại left menu. (1412246)
 * [x] Trang web được thiết kế sẽ bao gồm các trang: home, albums, about, blog. (1412240)
 * [x] Khi nhấn vào trang albums sẽ thấy danh sách các album đã được lưu trữ trong hệ thống. Mỗi album bao gồm: ảnh cover, tên người tạo, tổng số view của các tấm ảnh trong album. (1412240)
 * [x] Khi nhấn vào từng album sẽ sẽ chuyển sang danh sách các tấm ảnh trong album. Mỗi tấm ảnh hiển thị các thông tin: người đăng, số lượng view và tấm ảnh dưới dạng thumbnail. (1412240)
@@ -36,7 +36,7 @@ Yêu cầu **không bắt buộc**:
 * [ ] Quản lý thêm thông tin tag cho mỗi bài viết. Mỗi bài viết có thể bao gồm nhiều tag và mỗi tag có thể có nhiều bài viết. (**MSSV**)
 * [ ] Cho phép người dùng đăng nhập bằng tài khoản facebook và lấy ảnh đại diện, email từ facebook. (**MSSV**)
 * [x] Cho phép người dùng tạo album và đăng ảnh mới vào album. (1412240)
-* [x] Chỉ cho phép người tạo album được phép thêm, xóa ảnh mình đã đăng vào album. (1412240)
+* [x] Chỉ cho phép người tạo album được phép thêm, xóa ảnh mình đã đăng vào album. (1412240 chưa có chức năng xóa ảnh)
 * [x] Chỉ cho phép người tạo bài viết được phép chỉnh sửa bài viết mình đã đăng. (1412240)
 * [ ] Cho phép người dùng layout bài viết bằng markdown. (**MSSV**)
 * [ ] Gửi mail cho người dùng khi người dùng đã đăng nhập thành công. (**MSSV**)
@@ -45,8 +45,9 @@ Yêu cầu **không bắt buộc**:
 Liệt kê các **yêu cầu nâng cao** đã thực hiện:
 * [x] Bài viết có 2 trạng thái private và public, chỉ chủ bài viết được xem bài viết private (1412240)
 * [x] Tìm kiếm các bài viết dựa theo tên (1412240)
-* [x] Người viết bài có thể tuỳ biến layout bài viết
-* [x] Chỉ chủ comment mới được xoá comment
+* [x] Người viết bài có thể tuỳ biến layout bài viết (1412240)
+* [x] Chỉ chủ comment mới được xoá comment (1412240)
+* [x] Phân trang cho trang albums và trang blogs (1412240)
 
 ## Demo
 
